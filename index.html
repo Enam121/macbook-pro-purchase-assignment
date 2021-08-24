@@ -31,12 +31,12 @@
                     <!-- configaretion -->
                     <div>
                         <h4 class="text-2xl font-semibold pb-3">Memory</h4>
-                        <button
+                        <button id="btn-8gb-memory"
                             class="text-xl bg-white border  border-indigo-900 rounded px-6 py-3 hover:bg-gray-100 focus:border-green-300">8GB
                             unified
                             memory</button>
 
-                        <button
+                        <button id="btn-16gb-memory"
                             class="text-xl bg-white border  border-indigo-900 rounded px-6 py-3 hover:bg-gray-100 focus:border-green-300">16GB
                             unified
                             memory</button>
@@ -45,15 +45,15 @@
                     <div class="my-10">
                         <h4 class="text-2xl font-semibold pb-3">Storage</h4>
 
-                        <button
+                        <button id="btn-256gb-ssd"
                             class="text-xl bg-white border  border-indigo-900 rounded px-5 py-3 hover:bg-gray-100 focus:border-green-300">256GB
                             SSD storage</button>
 
-                        <button
+                        <button id="btn-512gb-ssd"
                             class="text-xl bg-white border  border-indigo-900 rounded px-5 py-3 hover:bg-gray-100 focus:border-green-300">512GB
                             SSD storage</button>
 
-                        <button
+                        <button id="btn-1tb-ssd"
                             class="text-xl bg-white border  border-indigo-900 rounded px-5 py-3 hover:bg-gray-100 focus:border-green-300 my-3">1TB
                             SSD storage</button>
 
@@ -62,40 +62,44 @@
                     <div class="my-10">
                         <h4 class="text-2xl font-semibold pb-3">Choose your delivery option</h4>
 
-                        <button
+                        <button id="btn-local-delivery"
                             class="text-xl bg-white border  border-indigo-900 rounded px-5 py-3 hover:bg-gray-100 focus:border-green-300">Friday
                             Aug 25, FREE Prime Delivery</button>
 
-                        <button
+                        <button id="btn-argent-delivery"
                             class="text-xl bg-white border  border-indigo-900 rounded px-5 py-3 hover:bg-gray-100 focus:border-green-300 my-3">Monday
                             Aug 21, FREE Prime Delivery $20</button>
                     </div>
                     <!-- calculation -->
                     <div class="my-10 w-2/3">
                         <h4 class="text-2xl font-bold py-3 flex justify-between border-b-2">Best Price
-                            <span>$1299</span>
+                            <span>$<span id="best-price">1299</span></span>
                         </h4>
                         <hr>
                         <h4 class="text-2xl font-bold py-3 flex justify-between border-b-2">Extra Memory Cost
-                            <span>$0</span>
+                            <span>$<span id="extra-memory-cost">0</span>
+                            </span>
                         </h4>
                         <hr>
                         <h4 class="text-2xl font-bold py-3 flex justify-between border-b-2">Extra Stotage Cost
-                            <span>$0</span>
+                            <span>$<span id="extra-storage-cost">0</span>
+                            </span>
                         </h4>
                         <hr>
                         <h4 class="text-2xl font-bold py-3 flex justify-between border-b-2 border-black	">Delivery
                             Charge
-                            <span>$0</span>
+                            <span>$<span id="delivery-charge">0</span>
+                            </span>
                         </h4>
                         <hr>
                         <h4 class="text-2xl font-bold py-3 flex justify-between border-b-2">Total Price
-                            <span>$1299</span>
+                            <span>$<span id="total-price">1299</span></span>
                         </h4>
                         <!-- promo code  -->
                         <h4 class="text-2xl font-semibold pb-3 pt-6">Add Promo Code</h4>
-                        <input type="text" class="border rounded py-3 px-6">
-                        <button
+
+                        <input type="text" name="" id="promocode-input" class="border border-black rounded py-3 px-6">
+                        <button id="btn-promocode"
                             class="bg-red-500 rounded pb-3 pt-1 px-3 text-white text-2xl font-semibold">Apply</button>
                     </div>
 
@@ -103,10 +107,11 @@
 
             </div>
             <hr>
-            <h2 class="text-6xl text-center font-bold my-5">Total: $1299</h2>
+            <h2 class="text-6xl text-center font-bold my-5">Total: $<span id="payble-amount">1299</span> </h2>
         </section>
     </main>
 
+    <script src="js/new.js"></script>
 </body>
 
 </html>
